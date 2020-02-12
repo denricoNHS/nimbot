@@ -1,3 +1,5 @@
+
+
 import os
 
 from discord.ext import commands
@@ -14,3 +16,4 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+print("Heyyyy")
