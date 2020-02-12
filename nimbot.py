@@ -14,3 +14,7 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+print("SALSA WAS HERE")
+
+
+
