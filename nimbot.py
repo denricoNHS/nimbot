@@ -14,3 +14,4 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+tree1 = tree2
