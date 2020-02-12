@@ -14,4 +14,6 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+print("hello")
+
 # Julian was here 
