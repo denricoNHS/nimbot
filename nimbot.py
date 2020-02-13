@@ -13,4 +13,5 @@ async def play_nim(ctx):
     await ctx.send("Still working on it, kiddo.")
 
 bot.run(token)
-
+#Richard Dupoux JUNIOR 
+#360 no scope
