@@ -14,5 +14,4 @@ async def play_nim(ctx):
 
 bot.run(token)
 
-#Your name: Anny 
-git commit 
+#Your name: Anny
