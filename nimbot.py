@@ -14,4 +14,4 @@ async def play_nim(ctx):
 
 bot.run(token)
 
-print("wassup homesicle")
+#Caitlyn Fernandez
