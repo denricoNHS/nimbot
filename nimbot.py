@@ -12,6 +12,8 @@ bot = commands.Bot(command_prefix='!')
 async def play_nim(ctx):
     await ctx.send("Still working on it, kiddo.")
 
-bot.run(token)
+@bot.command(name='flip_coin')
+async def flip_coin(ctx):
+    await ctx.send(random.choice(["heads","tails"]))
 
-tree1 = tree2
+bot.run(token)
