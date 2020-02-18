@@ -14,3 +14,5 @@ async def play_nim(ctx):
 
 bot.run(token)
 
+#vicky 
+
