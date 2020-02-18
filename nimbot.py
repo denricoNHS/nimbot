@@ -12,6 +12,7 @@ bot = commands.Bot(command_prefix='!')
 async def play_nim(ctx):
     await ctx.send("Still working on it, kiddo.")
 
+@bot.command(name="flip_coin")
+async def flip_coin():
+    await ctx.send(random.choice(["heads","tails"]))
 bot.run(token)
-
-#angie Rodriguez
