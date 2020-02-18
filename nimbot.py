@@ -1,4 +1,5 @@
 import os
+import random 
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -12,9 +13,9 @@ bot = commands.Bot(command_prefix='!')
 async def play_nim(ctx):
     await ctx.send("Still working on it, kiddo.")
 
-@bot.command(name="rank")
-async def display_rank(ctx):
-    await ctx.send("Dymon is in first place")
+@bot.command(name="flip_coin")
+async def flip_coin(ctx):
+    await ctx.send(random.choice(["heads", "tails"]))
 
 bot.run(token)
 
