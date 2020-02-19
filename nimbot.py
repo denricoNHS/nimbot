@@ -16,7 +16,7 @@ async def flip_coin(ctx):
     await ctx.send(random.choice(["Heads", "Tails"]))
 
 @bot.command(name= 'avg')
-async def avg(ctx,a,b):
+async def avg(ctx,a:float,b:float):
     await ctx.send((a+b)/2)
 
 bot.run(token)
