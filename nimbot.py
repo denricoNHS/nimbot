@@ -20,5 +20,6 @@ async def avg(ctx,a,b):
     await ctx.send((a+b)/2)
 
 bot.run(token)
+
  
  
