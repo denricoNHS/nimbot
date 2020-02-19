@@ -20,7 +20,13 @@ async def flip_coin(ctx):
 @bot.command(name="average")
 async def average(ctx, a, b):
     await ctx.send((a+b)/2)
-     
+
+average(2, 3)
+
+
+
+
+
 
 bot.run(token)
 
