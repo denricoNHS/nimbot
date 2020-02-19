@@ -9,7 +9,9 @@ token = os.getenv('DISCORD_TOKEN')
 
 bot = commands.Bot(command_prefix='!')
 
-@bot.command(name=)
+@bot.command(name="nim")
+async def play_nim(ctx):
+    await ctx.send("Still working on it, kiddo.")
 
 @bot.command(name="flip_coin")
 async def flip_coin():
