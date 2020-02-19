@@ -22,6 +22,6 @@ bot.run(token)
 
 @bot.commad(name='average')
 async def average(ctx, a, b):
-    await ctx.send( (a*b)/2)
+    await ctx.send[(a + b)/2]
 #vicky 
 

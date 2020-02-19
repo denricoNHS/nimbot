@@ -1,0 +1,8 @@
+import random
+
+def h_t ():
+    return random.choice(["Heads", "Tails"])
+
+print(h_t())
+
+
