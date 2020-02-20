@@ -10,7 +10,7 @@ def get_joke():
     url = "https://icanhazdadjoke.com/"
     header = {"Accept" : "application/json"}
     joke = requests.get(url, headers = header).json()
-    return joke["joke"]
+    await joke["joke"]
 
 eload_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -29,5 +29,10 @@ async def flip_coin(ctx):
 async def avg(ctx, *args: float):
     await ctx.send(sum(args) / len(args))
 
+@bot.command(name="rock_paper_siccors")
+    async def rock_paper_siccors(ctx):
+        await ctx.send(random.choices(["Rock", "Paper", "Siccors"]))
+
 bot.run(token)
 @bot.command(name="joke")
+
