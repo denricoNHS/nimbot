@@ -20,7 +20,7 @@ async def flip_coin(ctx):
 async def avg(ctx,*args : float):
     await ctx.send(sum(args)/ len(args))
 
-@bot.command(name= "Day of the week")
+@bot.command(name= "day of the week")
 async def day_of_the_week(ctx,y,m,d):
     await ctx.send(datetime.datetime(y,m,d).strftime("%A"))
 
