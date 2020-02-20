@@ -1,4 +1,5 @@
 import os
+import datetime
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -18,6 +19,10 @@ async def flip_coin(ctx):
 @bot.command(name= 'avg')
 async def avg(ctx,*args : float):
     await ctx.send(sum(args)/ len(args))
+
+@bot.command(name= "Day of the week")
+async def day_of_the_week(ctx,y,m,d):
+    await ctx.send(datetime.datetime(y,m,d).strftime("%A"))
 
 bot.run(token)
 
