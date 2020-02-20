@@ -19,7 +19,6 @@ async def flip_coin(ctx):
     await ctx.send(random.choice(["Head", "Tail"]))
 
 
-
 @bot.command(name='average')
 async def average(ctx, *args: float):
     await ctx.send((sum(args))/len(args)) 
