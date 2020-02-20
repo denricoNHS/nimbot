@@ -21,6 +21,10 @@ async def flip_coin():
 async def average(ctx, a, b):
     await ctx.send(a+b/2)
     
+@bot.command(name= 'inspirational_quotes')
+async def inspirational_quotes():
+    await ctx.send(random.choice(["Your limitation—it's only your imagination.", "Push yourself, because no one else is going to do it for you."]))
+
 bot.run(token)
 #Tatiana Nunez
 
