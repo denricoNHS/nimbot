@@ -4,7 +4,7 @@ import random
 from discord.ext import commands
 from dotenv import load_dotenv
 
-def fib(n):
+def fibonacci(n):
     sign = -1 if n < 0 else 1
     n = abs(n)
     a, b = 0, 1
