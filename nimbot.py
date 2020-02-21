@@ -30,4 +30,7 @@ async def joke(ctx):
             data = await resp.json()
             await ctx.send(data["joke"])
 
+@bot.command(name="d6", help="Roll a six-sided die")
+async def d6(ctx):
+    await ctx.send(random.choice(list("123456")))
 bot.run(token)
