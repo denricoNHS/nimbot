@@ -33,7 +33,7 @@ async  def alpha(str):
     print("they are in alpha order!")
     for word in words:
         print(word)
-
+    
 
 bot.run(token)
 
