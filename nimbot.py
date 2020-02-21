@@ -1,5 +1,6 @@
 import os
 import random
+import datetime
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -23,6 +24,10 @@ async def flip_coin(ctx):
 async def average(ctx, *args: float):
     await ctx.send((sum(args))/len(args)) 
 
+@bot.command(name='date') 
+async def date(ctx):
+    current = datetime.datetime.now()  
+    await ctx.send(("Today is",current.strftime("%A, %B %d, %Y."), "The time is",current.strftime("%I:%M:%S")))
 
 bot.run(token)
 
