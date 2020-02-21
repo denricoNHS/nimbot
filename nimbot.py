@@ -19,7 +19,7 @@ async def years_since_2020(year):
     b = " years, " 
     c = "which is " + str(int(a)*365) 
     d = " days"
-    return (a + b + c + d)) 
+    await(a + b + c + d)) 
 
 bot.run(token)
 
