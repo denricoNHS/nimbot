@@ -26,12 +26,12 @@ async def odds(ctx):
     await random.randint(1,10)
 
 @bot.command(name="d")
-async  def alpha(str):
+async  def alpha(ctx, str):
     str_1 = ("Hi, my name is Rosco! Stop doing what I do!")
     words = str_1.split()
     words.sort()
     print("they are in alpha order!")
-    for word in words:
+await for word in words:
         print(word)
     
 
