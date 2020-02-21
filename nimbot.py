@@ -21,6 +21,12 @@ async def flip_coin(ctx):
 async def average(ctx, a, b):
     await ctx.send( (a+b)/2 )
 
+@bot.command(name="sass")
+async def sass(ctx, arg):
+    options = ["I didn't ask for your opinion", "*rolls eyes*", "*flips hair and ignores question*", "Shut up, nerd", "Ew", "I'd roast you but I shouldn't burn trash", "There is so much trash coming out of your mouth i can smell it", "Did I ask?", "This is an A B conversation. C your way out of it", "I don't care", "Ugh", "Leave me alone", "Who are you again?", "Woow that's craazy *sarcasm*"]
+    num = random.randint(0, 13)
+    await options[num]
+
 bot.run(token)
 
 
