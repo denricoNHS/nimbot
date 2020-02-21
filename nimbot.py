@@ -1,16 +1,10 @@
 import os
 import random
 import requests
+import aiohttp
 
 from discord.ext import commands
 from dotenv import load_dotenv
-
-def get_joke():
-    url = "https://icanhazdadjoke.com/"
-    header = {"Accept" : "application/json"}
-    joke = requests.get(url, headers = header).json()
-    return joke["joke"]
-
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
@@ -30,7 +24,10 @@ async def avg(ctx, *args: float):
     await ctx.send(sum(args) / len(args))
 
 @bot.command(name="joke")
-async def tell_joke(ctx):
-    await ctx.send(get_joke())
+async def joke(ctx):
+    async with aiohttp.ClientSession(headers={"Accept":"application/json"}) as session:
+        async with session.get("https://icanhazdadjoke.com/") as resp:
+            data = await resp.json()
+            await ctx.send(data["joke"])
 
 bot.run(token)

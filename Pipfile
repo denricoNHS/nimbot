@@ -9,6 +9,7 @@ verify_ssl = true
 discord-py = "*"
 python-dotenv = "*"
 requests = "*"
+aiohttp = {extras = ["speedups"],version = "*"}
 
 [requires]
 python_version = "3.6"
