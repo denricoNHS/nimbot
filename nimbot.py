@@ -12,5 +12,15 @@ bot = commands.Bot(command_prefix='!')
 async def play_nim(ctx):
     await ctx.send("Still working on it, kiddo.")
 
+@bot.command (name =  "years_since_2020")
+async def years_since_2020(year):
+    await ctx.send(
+    a = str(2020 - year)
+    b = " years, " 
+    c = "which is " + str(int(a)*365) 
+    d = " days"
+    return (a + b + c + d)) 
+
 bot.run(token)
+
 
