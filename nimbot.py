@@ -21,6 +21,7 @@ async def flip_coin():
 async def average(ctx, a: float, b: float):
     await ctx.send[(a + b)/2]
 
+
 @bot.command(name= 'snapple_facts')
 async def snapple_facts():
         await ctx.send(random.choice(["Peaches are members of the almond family.",
@@ -42,7 +43,6 @@ async def snapple_facts():
         "'Q' is the only letter in the alphabet not apppearing in the name of any U.S. state.","Hawaii is the only state with one school distict.",
         "Cows give more milk when they listen to music.","An ostrich's brain is smaller than its eye.",
         "If you doubled one penny everyday for 30 days, you would have $5,368,709.","Colors like red, yellow, and orange make yoou hungry."]))
-
 
 
 
