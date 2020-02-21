@@ -16,4 +16,8 @@ async def play_nim(ctx):
 async def flip_coin(ctx):
     await ctx.send(random.choice(["heads","tails"]))
 
+@bot.command(name='multiplier')
+async def multiplier(a , b):
+    await ctx.send(a * b)
+
 bot.run(token)
