@@ -23,5 +23,16 @@ bot.run(token)
 @bot.commad(name='average')
 async def average(ctx, a, b):
     await ctx.send[(a + b)/2]
+
+
+@bot.commad(name="even_or_odd")
+async def even_or_odd(ctx, number):
+    if number % 2 == 0:
+        await ctx.send("Even")
+    else:
+        await ctx.send("Odd")
+
 #vicky 
+
+
 
