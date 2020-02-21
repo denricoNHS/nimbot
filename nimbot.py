@@ -1,5 +1,4 @@
 import os
-
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -15,6 +14,7 @@ async def play_nim(ctx):
 @bot.command(name='flip_coin')
 async def flip_coin(ctx):
     await ctx.send(random.choice(["heads","tails"]))
+
 
 @bot.command(name='multiplier')
 async def multiplier(a , b):
