@@ -21,8 +21,8 @@ async def flip_coin(ctx):
 async def average(ctx, a, b):
     await ctx.send(a+b/2)
     
-@bot.command(name= 'inspirational_quotes')
-async def inspirational_quotes(ctx):
+@bot.command(name= 'quotes')
+async def quotes(ctx):
     await ctx.send(random.choice(["Genius is one percent inspiration and ninety-nine percent perspiration.","You can observe a lot just by watching.","A house divided against itself cannot stand.","Difficulties increase the nearer we get to the goal.", "Fate is in your hands and no one elses","Be the chief but never the lord.","Nothing happens unless first we dream.","Well begun is half done.","Life is a learning experience, only if you learn.","Self-complacency is fatal to progress.","Peace comes from within. Do not seek it without.","What you give is what you get.","We can only learn to love by loving.","Life is change. Growth is optional. Choose wisely."]))
 bot.run(token)
 #Tatiana Nunez
