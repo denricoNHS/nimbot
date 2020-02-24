@@ -1,5 +1,6 @@
 import os
 import random
+import requests
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -16,6 +17,14 @@ async def play_nim(ctx):
 @bot.command(name='flip_coin')
 async def flip_coin(ctx):
     await ctx.send(random.choice(["Heads","Tails"]))
+
+@bot.command(name='headline')
+async def headline(ctx):
+    url = ('http://newsapi.org/v2/top-headlines?'
+       'sources=bbc-news&'
+       'apiKey=94b0fd11ba4d4922ae3a3a90b9370872')
+    response = requests.get(url)
+    await ctx.send(response.json())
 
 bot.run(token)
 
