@@ -14,7 +14,7 @@ async def casino(ctx):
     print ("2.ROll the Dice")
     await("Enter which number game would you like to play")
 
-bot.run('Njg5NTIxNjAyNjgxMjQxNjAz.XnEjgw.-WPeI1GHJcsLc-9mfkTuTmuysJA')
+bot.run('Njg5NTIxNjAyNjgxMjQxNjAz.XnFFug.9N5ib6LSE596lEkBVqIscan98Qo')
 
  
  
